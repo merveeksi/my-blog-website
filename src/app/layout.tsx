@@ -9,7 +9,7 @@ import { ShootingStarsDemo } from '../components/ui/background-demo'
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-inter'
+  variable: '--font-in'
 })
 
 const manrope = Manrope({ 

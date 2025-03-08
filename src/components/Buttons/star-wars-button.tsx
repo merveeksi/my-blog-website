@@ -39,7 +39,7 @@ const StarWarsButton: React.FC = () => {
   return (
     <motion.button
       ref={buttonRef}
-      className="text-md relative overflow-hidden rounded-full border-2 border-yellow-400 bg-black px-8 py-2.5 font-semibold text-yellow-400 focus:outline-none"
+      className="text-md relative overflow-hidden rounded-full border-2 border-yellow-400 bg-black px-8 py-2.5 font-semibold text-yellow-400 focus:outline-none mt-20"
       style={{
         boxShadow:
           '0 0 10px rgba(234, 179, 8, 0.5), 0 0 20px rgba(234, 179, 8, 0.3)',
