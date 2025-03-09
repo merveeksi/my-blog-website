@@ -1,6 +1,6 @@
 import { compareDesc, parseISO } from "date-fns";
 
-interface Blog {
+export interface Blog {
   publishedAt: string;
   [key: string]: any;
 }
@@ -8,6 +8,10 @@ interface Blog {
 export const cx = (...classNames: string[]): string => classNames.filter(Boolean).join(" ");
 
 export const sortBlogs = (blogs: Blog[]): Blog[] => {
+  if (!blogs || !Array.isArray(blogs)) {
+    return [];
+  }
+  
   return blogs
     .slice()
     .sort((a: Blog, b: Blog) =>

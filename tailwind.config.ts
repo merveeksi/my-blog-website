@@ -14,7 +14,7 @@ const config: Config = {
         light: "#fff",
         accent: "#7B00D3", 
         accentDark: "#ffdb4d",
-        gray: "#747474",
+        mgray: "#747474",
       },
       fontFamily: {
         in: ['var(--font-in)'],
@@ -22,6 +22,8 @@ const config: Config = {
       },
     },
   },
-  plugins: [require('daisyui')],
+  plugins: [require('daisyui'),
+    require('tailwind-scrollbar')({nocompatible: true}),
+  ],
 }
 export default config

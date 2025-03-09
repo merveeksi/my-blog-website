@@ -33,7 +33,7 @@ export default function RootLayout({
         cx(
           inter.variable,
           manrope.variable,
-          'font-mr bg-light dark:bg-dark relative overflow-hidden'
+          'font-mr bg-light dark:bg-dark relative overflow-y-auto'
         )}>
            <div className="fixed inset-0 w-full h-full z-0">
           <ShootingStarsDemo />

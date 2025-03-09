@@ -1,0 +1,53 @@
+---
+type: "Blog"
+title: "Blazor ile Full-Stack Uygulamalar: .NET Dünyasında Modern Web Geliştirme"
+description: "Blazor kullanarak hem sunucu tarafında hem de istemci tarafında C# kodu çalıştırma ve modern web projeleri geliştirme rehberi."
+image: ""
+publishedAt: "2025-03-10"
+updatedAt: "2025-03-10"
+author: "merveeksi"
+isPublished: true
+tags:
+  - "C#"
+  - "Blazor"
+  - "Web Development"
+  - "Motivasyon"
+---
+
+# Blazor Nedir?
+
+Blazor, **.NET** ekosisteminde **C#** kullanarak web uygulamaları geliştirmeyi sağlayan bir çerçevedir. **Razor** bileşenlerine benzer bir sözdizimiyle, **HTML** ve **C#** kodunu aynı dosyada kullanmanıza olanak tanır. Hem **Sunucu (Server-Side Blazor)** hem de **İstemci (WebAssembly Blazor)** tarafında çalışabilir.
+
+## Neden Blazor?
+
+1. **Tek Dil Avantajı**: Hem front-end hem de back-end için C# kullanabilirsin.  
+2. **Zengin .NET Kütüphanesi**: Mevcut .NET kütüphanelerinden yararlanma imkanı.  
+3. **Modern UI**: Razor bileşenleri sayesinde bileşen tabanlı geliştirme yapısı.
+
+### Basit Bir Blazor Bileşeni Örneği
+
+```razor
+@page "/counter"
+
+<h3>Counter</h3>
+
+<p>Sayac: @count</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Arttır</button>
+
+@code {
+    private int count = 0;
+
+    private void IncrementCount()
+    {
+        count++;
+    }
+}
+
+Bu basit bileşen, bir butona tıklandığında count değişkenini arttırarak ekrana güncel değerini yansıtır.
+
+Motivasyon ve Takım Çalışması
+Ortak Dil (C#): Front-end ve back-end aynı dilde olduğu için ekip içi iletişim kolaylaşır.
+Hızlı Prototipleme: Blazor ile bileşenleri hızlıca oluşturabilir, geri bildirim sürecini kısaltabilirsin.
+Güncel Kal: Blazor, Microsoft tarafından aktif olarak geliştiriliyor. Topluluk desteği ve dokümantasyonu güçlü.
+Blazor, .NET geliştiricileri için modern ve verimli bir seçenek. Motivasyonunu koruyarak projelerinde yenilikçi çözümler üretebilirsin!

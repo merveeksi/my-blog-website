@@ -1,0 +1,69 @@
+---
+type: "Blog"
+title: "Clean Architecture ve Blazor: Kurumsal Seviyede Modern .NET Uygulamaları"
+description: "Clean Architecture ilkelerini Blazor ile birleştirerek kurumsal projelerde nasıl ölçeklenebilir, bakımı kolay ve sürdürülebilir uygulamalar geliştirebileceğinizi keşfedin."
+image: "/images/clean-architecture.png"
+publishedAt: "2025-03-12"
+updatedAt: "2025-03-12"
+author: "merveeksi"
+isPublished: true
+tags:
+  - "C#"
+  - "Clean Architecture"
+  - "Blazor"
+  - "Kurumsal Uygulamalar"
+---
+
+# Giriş
+
+Clean Architecture, **iş kurallarını** (domain) ön planda tutarken, **Blazor** ise modern web geliştirme dünyasında **.NET** tabanlı güçlü bir araç sunar. İkisini bir araya getirerek **katmanlı**, **bakımı kolay** ve **yüksek performanslı** uygulamalar geliştirebilirsin.
+
+## Mimari Yapı
+
+1. **Domain Katmanı**: Temel **Entity** ve **iş kuralları**.  
+2. **Application Katmanı**: **Servis**, **DTO**, **Use Case** (iş senaryosu) mantıkları.  
+3. **Infrastructure Katmanı**: **Veritabanı**, **API entegrasyonları** vb.  
+4. **UI (Blazor)**: Bileşen tabanlı arayüz katmanı.
+
+### Katmanlar Arası İletişim
+
+```mermaid
+flowchart LR
+    A[Domain] --> B[Application]
+    B[Application] --> C[Infrastructure]
+    B[Application] --> D[UI - Blazor]
+    C[Infrastructure] --> B
+    D[UI - Blazor] --> B
+
+    Bu şemada Domain katmanı en merkezde, UI (Blazor) en dış katmanda konumlanır. Bağımlılık içten dışa doğru akar.
+
+Kod Örneği
+
+// Domain katmanında temel Entity
+public class Customer
+{
+    public Guid Id { get; set; }
+    public string Name { get; set; } = default!;
+}
+
+// Application katmanında Use Case
+public class CreateCustomerUseCase
+{
+    private readonly ICustomerRepository _repository;
+
+    public CreateCustomerUseCase(ICustomerRepository repository)
+    {
+        _repository = repository;
+    }
+
+    public async Task ExecuteAsync(Customer newCustomer)
+    {
+        // İş kuralları, validasyonlar
+        await _repository.AddAsync(newCustomer);
+    }
+}
+Blazor tarafında bu Use Case'i çağırarak kullanıcıdan alınan veriyi işleyebilir ve veritabanına kaydedebilirsin.
+
+Sonuç
+Clean Architecture ve Blazor kombinasyonu, kurumsal projelerde düşük bakım maliyeti ve yüksek esneklik sağlar. İyi tanımlanmış katmanlar sayesinde ekibin projeye hızlı adapte olur, test ve güncelleme süreçleri kolaylaşır. Böylece motivasyon artar, projeye olan güven pekişir.
+

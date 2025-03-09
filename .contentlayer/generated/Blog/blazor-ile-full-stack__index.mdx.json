@@ -1,0 +1,29 @@
+{
+  "title": "Blazor ile Full-Stack Uygulamalar: .NET Dünyasında Modern Web Geliştirme",
+  "publishedAt": "2025-03-10T00:00:00.000Z",
+  "updatedAt": "2025-03-10T00:00:00.000Z",
+  "description": "Blazor kullanarak hem sunucu tarafında hem de istemci tarafında C# kodu çalıştırma ve modern web projeleri geliştirme rehberi.",
+  "image": "",
+  "isPublished": true,
+  "author": "merveeksi",
+  "tags": [
+    "C#",
+    "Blazor",
+    "Web Development",
+    "Motivasyon"
+  ],
+  "body": {
+    "raw": "\n# Blazor Nedir?\n\nBlazor, **.NET** ekosisteminde **C#** kullanarak web uygulamaları geliştirmeyi sağlayan bir çerçevedir. **Razor** bileşenlerine benzer bir sözdizimiyle, **HTML** ve **C#** kodunu aynı dosyada kullanmanıza olanak tanır. Hem **Sunucu (Server-Side Blazor)** hem de **İstemci (WebAssembly Blazor)** tarafında çalışabilir.\n\n## Neden Blazor?\n\n1. **Tek Dil Avantajı**: Hem front-end hem de back-end için C# kullanabilirsin.  \n2. **Zengin .NET Kütüphanesi**: Mevcut .NET kütüphanelerinden yararlanma imkanı.  \n3. **Modern UI**: Razor bileşenleri sayesinde bileşen tabanlı geliştirme yapısı.\n\n### Basit Bir Blazor Bileşeni Örneği\n\n```razor\n@page \"/counter\"\n\n<h3>Counter</h3>\n\n<p>Sayac: @count</p>\n\n<button class=\"btn btn-primary\" @onclick=\"IncrementCount\">Arttır</button>\n\n@code {\n    private int count = 0;\n\n    private void IncrementCount()\n    {\n        count++;\n    }\n}\n\nBu basit bileşen, bir butona tıklandığında count değişkenini arttırarak ekrana güncel değerini yansıtır.\n\nMotivasyon ve Takım Çalışması\nOrtak Dil (C#): Front-end ve back-end aynı dilde olduğu için ekip içi iletişim kolaylaşır.\nHızlı Prototipleme: Blazor ile bileşenleri hızlıca oluşturabilir, geri bildirim sürecini kısaltabilirsin.\nGüncel Kal: Blazor, Microsoft tarafından aktif olarak geliştiriliyor. Topluluk desteği ve dokümantasyonu güçlü.\nBlazor, .NET geliştiricileri için modern ve verimli bir seçenek. Motivasyonunu koruyarak projelerinde yenilikçi çözümler üretebilirsin!",
+    "html": "<h1>Blazor Nedir?</h1>\n<p>Blazor, <strong>.NET</strong> ekosisteminde <strong>C#</strong> kullanarak web uygulamaları geliştirmeyi sağlayan bir çerçevedir. <strong>Razor</strong> bileşenlerine benzer bir sözdizimiyle, <strong>HTML</strong> ve <strong>C#</strong> kodunu aynı dosyada kullanmanıza olanak tanır. Hem <strong>Sunucu (Server-Side Blazor)</strong> hem de <strong>İstemci (WebAssembly Blazor)</strong> tarafında çalışabilir.</p>\n<h2>Neden Blazor?</h2>\n<ol>\n<li><strong>Tek Dil Avantajı</strong>: Hem front-end hem de back-end için C# kullanabilirsin.</li>\n<li><strong>Zengin .NET Kütüphanesi</strong>: Mevcut .NET kütüphanelerinden yararlanma imkanı.</li>\n<li><strong>Modern UI</strong>: Razor bileşenleri sayesinde bileşen tabanlı geliştirme yapısı.</li>\n</ol>\n<h3>Basit Bir Blazor Bileşeni Örneği</h3>\n<pre><code class=\"language-razor\">@page \"/counter\"\n\n&#x3C;h3>Counter&#x3C;/h3>\n\n&#x3C;p>Sayac: @count&#x3C;/p>\n\n&#x3C;button class=\"btn btn-primary\" @onclick=\"IncrementCount\">Arttır&#x3C;/button>\n\n@code {\n    private int count = 0;\n\n    private void IncrementCount()\n    {\n        count++;\n    }\n}\n\nBu basit bileşen, bir butona tıklandığında count değişkenini arttırarak ekrana güncel değerini yansıtır.\n\nMotivasyon ve Takım Çalışması\nOrtak Dil (C#): Front-end ve back-end aynı dilde olduğu için ekip içi iletişim kolaylaşır.\nHızlı Prototipleme: Blazor ile bileşenleri hızlıca oluşturabilir, geri bildirim sürecini kısaltabilirsin.\nGüncel Kal: Blazor, Microsoft tarafından aktif olarak geliştiriliyor. Topluluk desteği ve dokümantasyonu güçlü.\nBlazor, .NET geliştiricileri için modern ve verimli bir seçenek. Motivasyonunu koruyarak projelerinde yenilikçi çözümler üretebilirsin!\n</code></pre>"
+  },
+  "_id": "blazor-ile-full-stack/index.mdx",
+  "_raw": {
+    "sourceFilePath": "blazor-ile-full-stack/index.mdx",
+    "sourceFileName": "index.mdx",
+    "sourceFileDir": "blazor-ile-full-stack",
+    "contentType": "mdx",
+    "flattenedPath": "blazor-ile-full-stack"
+  },
+  "type": "Blog",
+  "url": "/blogs/blazor-ile-full-stack"
+}

@@ -16,7 +16,7 @@ const Blog = defineDocumentType(() => ({
 
         updatedAt: { 
             type: "date", 
-            required: true,
+            required: false,
         },
 
         description: { 
@@ -25,7 +25,8 @@ const Blog = defineDocumentType(() => ({
         },
 
         image: { 
-            type: "image",
+            type: "string",
+            required: false,
         },
 
         isPublished: { 
@@ -41,7 +42,7 @@ const Blog = defineDocumentType(() => ({
         tags: { 
             type: "list", 
             of: { type: "string" },
-            required: true 
+            required: false 
         },
     },
     computedFields: {

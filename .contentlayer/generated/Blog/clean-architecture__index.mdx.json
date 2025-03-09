@@ -1,0 +1,28 @@
+{
+  "title": "C# ile Clean Architecture'a Giriş: Temiz Kodun Temelleri",
+  "publishedAt": "2025-03-09T00:00:00.000Z",
+  "updatedAt": "2025-03-09T00:00:00.000Z",
+  "description": "C# ve Clean Architecture kullanarak sürdürülebilir ve esnek projeler geliştirmek için temel prensipleri öğrenin.",
+  "image": "",
+  "isPublished": true,
+  "author": "merveeksi",
+  "tags": [
+    "C#",
+    "Clean Architecture",
+    "Motivasyon"
+  ],
+  "body": {
+    "raw": "\n# Clean Architecture Nedir?\n\nClean Architecture, projelerimizin **bağımlılıklardan arınmış**, kolayca **test edilebilir** ve **bakımı kolay** olmasını hedefleyen bir yazılım mimarisi yaklaşımıdır. **Robert C. Martin** (nam-ı diğer Uncle Bob) tarafından ortaya atılan bu mimari, katmanlar arasındaki bağımlılıkları minimize eder ve **iş kurallarını** merkeze alır.\n\n## Katmanlar Arası Bağımlılık\n\nClean Architecture'da **katmanlar** (örneğin `Core`, `Application`, `Infrastructure`, `UI`) birbiriyle doğrudan değil, **soyutlama** aracılığıyla haberleşir. Böylece **UI katmanı** veya **veritabanı** değiştiğinde, iş kuralları (Core katmanı) minimal etkilenir.\n\n### Örnek C# Kod Parçası\n\n```csharp\n// Core katmanındaki basit bir Entity örneği\npublic class Product\n{\n    public int Id { get; set; }\n    public string Name { get; set; } = default!;\n    public decimal Price { get; set; }\n}\n\n// Application katmanında bir servis örneği\npublic interface IProductService\n{\n    Product GetProductById(int id);\n}\n\nBu şekilde, Entity ve Service arayüzlerini ayrı katmanlarda tutarak, uygulamanın bağımlılıklarını düzenli hale getirebilirsin.\n\nMotivasyon ve Verimlilik\nOdaklanma: Net bir mimari, geliştiricilerin hangi katmanda ne yapacağını bildiği için zihinsel yükü azaltır.\nUzun Vadeli Kazanç: İlk başta biraz daha fazla efor gerektirse de, Clean Architecture uzun vadede bakım maliyetini düşürür.\nEkip İçi İşbirliği: Katmanlı yapı sayesinde görev dağılımı ve sorumluluklar daha net belirlenir.\nUnutma, Clean Architecture sadece bir başlangıç noktası. Takımının ve projenin ihtiyaçlarına göre özelleştirerek sürdürülebilir, temiz ve anlaşılır kod tabanları oluşturabilirsin!",
+    "html": "<h1>Clean Architecture Nedir?</h1>\n<p>Clean Architecture, projelerimizin <strong>bağımlılıklardan arınmış</strong>, kolayca <strong>test edilebilir</strong> ve <strong>bakımı kolay</strong> olmasını hedefleyen bir yazılım mimarisi yaklaşımıdır. <strong>Robert C. Martin</strong> (nam-ı diğer Uncle Bob) tarafından ortaya atılan bu mimari, katmanlar arasındaki bağımlılıkları minimize eder ve <strong>iş kurallarını</strong> merkeze alır.</p>\n<h2>Katmanlar Arası Bağımlılık</h2>\n<p>Clean Architecture'da <strong>katmanlar</strong> (örneğin <code>Core</code>, <code>Application</code>, <code>Infrastructure</code>, <code>UI</code>) birbiriyle doğrudan değil, <strong>soyutlama</strong> aracılığıyla haberleşir. Böylece <strong>UI katmanı</strong> veya <strong>veritabanı</strong> değiştiğinde, iş kuralları (Core katmanı) minimal etkilenir.</p>\n<h3>Örnek C# Kod Parçası</h3>\n<pre><code class=\"language-csharp\">// Core katmanındaki basit bir Entity örneği\npublic class Product\n{\n    public int Id { get; set; }\n    public string Name { get; set; } = default!;\n    public decimal Price { get; set; }\n}\n\n// Application katmanında bir servis örneği\npublic interface IProductService\n{\n    Product GetProductById(int id);\n}\n\nBu şekilde, Entity ve Service arayüzlerini ayrı katmanlarda tutarak, uygulamanın bağımlılıklarını düzenli hale getirebilirsin.\n\nMotivasyon ve Verimlilik\nOdaklanma: Net bir mimari, geliştiricilerin hangi katmanda ne yapacağını bildiği için zihinsel yükü azaltır.\nUzun Vadeli Kazanç: İlk başta biraz daha fazla efor gerektirse de, Clean Architecture uzun vadede bakım maliyetini düşürür.\nEkip İçi İşbirliği: Katmanlı yapı sayesinde görev dağılımı ve sorumluluklar daha net belirlenir.\nUnutma, Clean Architecture sadece bir başlangıç noktası. Takımının ve projenin ihtiyaçlarına göre özelleştirerek sürdürülebilir, temiz ve anlaşılır kod tabanları oluşturabilirsin!\n</code></pre>"
+  },
+  "_id": "clean-architecture/index.mdx",
+  "_raw": {
+    "sourceFilePath": "clean-architecture/index.mdx",
+    "sourceFileName": "index.mdx",
+    "sourceFileDir": "clean-architecture",
+    "contentType": "mdx",
+    "flattenedPath": "clean-architecture"
+  },
+  "type": "Blog",
+  "url": "/blogs/clean-architecture"
+}

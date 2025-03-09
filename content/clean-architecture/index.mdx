@@ -1,0 +1,47 @@
+---
+type: "Blog"
+title: "C# ile Clean Architecture'a Giriş: Temiz Kodun Temelleri"
+description: "C# ve Clean Architecture kullanarak sürdürülebilir ve esnek projeler geliştirmek için temel prensipleri öğrenin."
+image: ""
+publishedAt: "2025-03-09"
+updatedAt: "2025-03-09"
+author: "merveeksi"
+isPublished: true
+tags:
+  - "C#"
+  - "Clean Architecture"
+  - "Motivasyon"
+---
+
+# Clean Architecture Nedir?
+
+Clean Architecture, projelerimizin **bağımlılıklardan arınmış**, kolayca **test edilebilir** ve **bakımı kolay** olmasını hedefleyen bir yazılım mimarisi yaklaşımıdır. **Robert C. Martin** (nam-ı diğer Uncle Bob) tarafından ortaya atılan bu mimari, katmanlar arasındaki bağımlılıkları minimize eder ve **iş kurallarını** merkeze alır.
+
+## Katmanlar Arası Bağımlılık
+
+Clean Architecture'da **katmanlar** (örneğin `Core`, `Application`, `Infrastructure`, `UI`) birbiriyle doğrudan değil, **soyutlama** aracılığıyla haberleşir. Böylece **UI katmanı** veya **veritabanı** değiştiğinde, iş kuralları (Core katmanı) minimal etkilenir.
+
+### Örnek C# Kod Parçası
+
+```csharp
+// Core katmanındaki basit bir Entity örneği
+public class Product
+{
+    public int Id { get; set; }
+    public string Name { get; set; } = default!;
+    public decimal Price { get; set; }
+}
+
+// Application katmanında bir servis örneği
+public interface IProductService
+{
+    Product GetProductById(int id);
+}
+
+Bu şekilde, Entity ve Service arayüzlerini ayrı katmanlarda tutarak, uygulamanın bağımlılıklarını düzenli hale getirebilirsin.
+
+Motivasyon ve Verimlilik
+Odaklanma: Net bir mimari, geliştiricilerin hangi katmanda ne yapacağını bildiği için zihinsel yükü azaltır.
+Uzun Vadeli Kazanç: İlk başta biraz daha fazla efor gerektirse de, Clean Architecture uzun vadede bakım maliyetini düşürür.
+Ekip İçi İşbirliği: Katmanlı yapı sayesinde görev dağılımı ve sorumluluklar daha net belirlenir.
+Unutma, Clean Architecture sadece bir başlangıç noktası. Takımının ve projenin ihtiyaçlarına göre özelleştirerek sürdürülebilir, temiz ve anlaşılır kod tabanları oluşturabilirsin!

@@ -12,14 +12,14 @@ export function ShootingStarsDemo() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center">
+    {/*  <div className="relative z-10 flex flex-col items-center justify-center h-full text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-8">
            Sayfama Hoş Geldiniz 👩🏻‍🦱 
         </h1>
         <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto px-4">
           Bu sayfa, Next.js ve Tailwind CSS kullanılarak oluşturulmuştur.
         </p>
-      </div>
+      </div>*/}
 
       {/* Multiple shooting star layers with different colors and speeds */}
       <ShootingStars

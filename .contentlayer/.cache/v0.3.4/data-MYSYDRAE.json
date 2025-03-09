@@ -1,0 +1,170 @@
+{
+  "cacheItemsMap": {
+    "blazor-ile-full-stack/index.mdx": {
+      "document": {
+        "title": "Blazor ile Full-Stack Uygulamalar: .NET Dünyasında Modern Web Geliştirme",
+        "publishedAt": "2025-03-10T00:00:00.000Z",
+        "updatedAt": "2025-03-10T00:00:00.000Z",
+        "description": "Blazor kullanarak hem sunucu tarafında hem de istemci tarafında C# kodu çalıştırma ve modern web projeleri geliştirme rehberi.",
+        "image": "",
+        "isPublished": true,
+        "author": "merveeksi",
+        "tags": [
+          "C#",
+          "Blazor",
+          "Web Development",
+          "Motivasyon"
+        ],
+        "body": {
+          "raw": "\n# Blazor Nedir?\n\nBlazor, **.NET** ekosisteminde **C#** kullanarak web uygulamaları geliştirmeyi sağlayan bir çerçevedir. **Razor** bileşenlerine benzer bir sözdizimiyle, **HTML** ve **C#** kodunu aynı dosyada kullanmanıza olanak tanır. Hem **Sunucu (Server-Side Blazor)** hem de **İstemci (WebAssembly Blazor)** tarafında çalışabilir.\n\n## Neden Blazor?\n\n1. **Tek Dil Avantajı**: Hem front-end hem de back-end için C# kullanabilirsin.  \n2. **Zengin .NET Kütüphanesi**: Mevcut .NET kütüphanelerinden yararlanma imkanı.  \n3. **Modern UI**: Razor bileşenleri sayesinde bileşen tabanlı geliştirme yapısı.\n\n### Basit Bir Blazor Bileşeni Örneği\n\n```razor\n@page \"/counter\"\n\n<h3>Counter</h3>\n\n<p>Sayac: @count</p>\n\n<button class=\"btn btn-primary\" @onclick=\"IncrementCount\">Arttır</button>\n\n@code {\n    private int count = 0;\n\n    private void IncrementCount()\n    {\n        count++;\n    }\n}\n\nBu basit bileşen, bir butona tıklandığında count değişkenini arttırarak ekrana güncel değerini yansıtır.\n\nMotivasyon ve Takım Çalışması\nOrtak Dil (C#): Front-end ve back-end aynı dilde olduğu için ekip içi iletişim kolaylaşır.\nHızlı Prototipleme: Blazor ile bileşenleri hızlıca oluşturabilir, geri bildirim sürecini kısaltabilirsin.\nGüncel Kal: Blazor, Microsoft tarafından aktif olarak geliştiriliyor. Topluluk desteği ve dokümantasyonu güçlü.\nBlazor, .NET geliştiricileri için modern ve verimli bir seçenek. Motivasyonunu koruyarak projelerinde yenilikçi çözümler üretebilirsin!",
+          "html": "<h1>Blazor Nedir?</h1>\n<p>Blazor, <strong>.NET</strong> ekosisteminde <strong>C#</strong> kullanarak web uygulamaları geliştirmeyi sağlayan bir çerçevedir. <strong>Razor</strong> bileşenlerine benzer bir sözdizimiyle, <strong>HTML</strong> ve <strong>C#</strong> kodunu aynı dosyada kullanmanıza olanak tanır. Hem <strong>Sunucu (Server-Side Blazor)</strong> hem de <strong>İstemci (WebAssembly Blazor)</strong> tarafında çalışabilir.</p>\n<h2>Neden Blazor?</h2>\n<ol>\n<li><strong>Tek Dil Avantajı</strong>: Hem front-end hem de back-end için C# kullanabilirsin.</li>\n<li><strong>Zengin .NET Kütüphanesi</strong>: Mevcut .NET kütüphanelerinden yararlanma imkanı.</li>\n<li><strong>Modern UI</strong>: Razor bileşenleri sayesinde bileşen tabanlı geliştirme yapısı.</li>\n</ol>\n<h3>Basit Bir Blazor Bileşeni Örneği</h3>\n<pre><code class=\"language-razor\">@page \"/counter\"\n\n&#x3C;h3>Counter&#x3C;/h3>\n\n&#x3C;p>Sayac: @count&#x3C;/p>\n\n&#x3C;button class=\"btn btn-primary\" @onclick=\"IncrementCount\">Arttır&#x3C;/button>\n\n@code {\n    private int count = 0;\n\n    private void IncrementCount()\n    {\n        count++;\n    }\n}\n\nBu basit bileşen, bir butona tıklandığında count değişkenini arttırarak ekrana güncel değerini yansıtır.\n\nMotivasyon ve Takım Çalışması\nOrtak Dil (C#): Front-end ve back-end aynı dilde olduğu için ekip içi iletişim kolaylaşır.\nHızlı Prototipleme: Blazor ile bileşenleri hızlıca oluşturabilir, geri bildirim sürecini kısaltabilirsin.\nGüncel Kal: Blazor, Microsoft tarafından aktif olarak geliştiriliyor. Topluluk desteği ve dokümantasyonu güçlü.\nBlazor, .NET geliştiricileri için modern ve verimli bir seçenek. Motivasyonunu koruyarak projelerinde yenilikçi çözümler üretebilirsin!\n</code></pre>"
+        },
+        "_id": "blazor-ile-full-stack/index.mdx",
+        "_raw": {
+          "sourceFilePath": "blazor-ile-full-stack/index.mdx",
+          "sourceFileName": "index.mdx",
+          "sourceFileDir": "blazor-ile-full-stack",
+          "contentType": "mdx",
+          "flattenedPath": "blazor-ile-full-stack"
+        },
+        "type": "Blog",
+        "url": "/blogs/blazor-ile-full-stack"
+      },
+      "documentHash": "1741503470949",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog-one/index.mdx": {
+      "document": {
+        "title": "Blog One Title",
+        "publishedAt": "2025-03-09T00:00:00.000Z",
+        "updatedAt": "2025-03-09T00:00:00.000Z",
+        "description": "This is the description for blog one",
+        "image": "/images/blog-image.png",
+        "isPublished": true,
+        "author": "merveeksi",
+        "tags": [
+          "productivity",
+          "css"
+        ],
+        "body": {
+          "raw": "\n# This is the h1 element\n## This is the h2 element\n",
+          "html": "<h1>This is the h1 element</h1>\n<h2>This is the h2 element</h2>"
+        },
+        "_id": "blog-one/index.mdx",
+        "_raw": {
+          "sourceFilePath": "blog-one/index.mdx",
+          "sourceFileName": "index.mdx",
+          "sourceFileDir": "blog-one",
+          "contentType": "mdx",
+          "flattenedPath": "blog-one"
+        },
+        "type": "Blog",
+        "url": "/blogs/blog-one"
+      },
+      "documentHash": "1741478050231",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "clean-architecture/index.mdx": {
+      "document": {
+        "title": "C# ile Clean Architecture'a Giriş: Temiz Kodun Temelleri",
+        "publishedAt": "2025-03-09T00:00:00.000Z",
+        "updatedAt": "2025-03-09T00:00:00.000Z",
+        "description": "C# ve Clean Architecture kullanarak sürdürülebilir ve esnek projeler geliştirmek için temel prensipleri öğrenin.",
+        "image": "",
+        "isPublished": true,
+        "author": "merveeksi",
+        "tags": [
+          "C#",
+          "Clean Architecture",
+          "Motivasyon"
+        ],
+        "body": {
+          "raw": "\n# Clean Architecture Nedir?\n\nClean Architecture, projelerimizin **bağımlılıklardan arınmış**, kolayca **test edilebilir** ve **bakımı kolay** olmasını hedefleyen bir yazılım mimarisi yaklaşımıdır. **Robert C. Martin** (nam-ı diğer Uncle Bob) tarafından ortaya atılan bu mimari, katmanlar arasındaki bağımlılıkları minimize eder ve **iş kurallarını** merkeze alır.\n\n## Katmanlar Arası Bağımlılık\n\nClean Architecture'da **katmanlar** (örneğin `Core`, `Application`, `Infrastructure`, `UI`) birbiriyle doğrudan değil, **soyutlama** aracılığıyla haberleşir. Böylece **UI katmanı** veya **veritabanı** değiştiğinde, iş kuralları (Core katmanı) minimal etkilenir.\n\n### Örnek C# Kod Parçası\n\n```csharp\n// Core katmanındaki basit bir Entity örneği\npublic class Product\n{\n    public int Id { get; set; }\n    public string Name { get; set; } = default!;\n    public decimal Price { get; set; }\n}\n\n// Application katmanında bir servis örneği\npublic interface IProductService\n{\n    Product GetProductById(int id);\n}\n\nBu şekilde, Entity ve Service arayüzlerini ayrı katmanlarda tutarak, uygulamanın bağımlılıklarını düzenli hale getirebilirsin.\n\nMotivasyon ve Verimlilik\nOdaklanma: Net bir mimari, geliştiricilerin hangi katmanda ne yapacağını bildiği için zihinsel yükü azaltır.\nUzun Vadeli Kazanç: İlk başta biraz daha fazla efor gerektirse de, Clean Architecture uzun vadede bakım maliyetini düşürür.\nEkip İçi İşbirliği: Katmanlı yapı sayesinde görev dağılımı ve sorumluluklar daha net belirlenir.\nUnutma, Clean Architecture sadece bir başlangıç noktası. Takımının ve projenin ihtiyaçlarına göre özelleştirerek sürdürülebilir, temiz ve anlaşılır kod tabanları oluşturabilirsin!",
+          "html": "<h1>Clean Architecture Nedir?</h1>\n<p>Clean Architecture, projelerimizin <strong>bağımlılıklardan arınmış</strong>, kolayca <strong>test edilebilir</strong> ve <strong>bakımı kolay</strong> olmasını hedefleyen bir yazılım mimarisi yaklaşımıdır. <strong>Robert C. Martin</strong> (nam-ı diğer Uncle Bob) tarafından ortaya atılan bu mimari, katmanlar arasındaki bağımlılıkları minimize eder ve <strong>iş kurallarını</strong> merkeze alır.</p>\n<h2>Katmanlar Arası Bağımlılık</h2>\n<p>Clean Architecture'da <strong>katmanlar</strong> (örneğin <code>Core</code>, <code>Application</code>, <code>Infrastructure</code>, <code>UI</code>) birbiriyle doğrudan değil, <strong>soyutlama</strong> aracılığıyla haberleşir. Böylece <strong>UI katmanı</strong> veya <strong>veritabanı</strong> değiştiğinde, iş kuralları (Core katmanı) minimal etkilenir.</p>\n<h3>Örnek C# Kod Parçası</h3>\n<pre><code class=\"language-csharp\">// Core katmanındaki basit bir Entity örneği\npublic class Product\n{\n    public int Id { get; set; }\n    public string Name { get; set; } = default!;\n    public decimal Price { get; set; }\n}\n\n// Application katmanında bir servis örneği\npublic interface IProductService\n{\n    Product GetProductById(int id);\n}\n\nBu şekilde, Entity ve Service arayüzlerini ayrı katmanlarda tutarak, uygulamanın bağımlılıklarını düzenli hale getirebilirsin.\n\nMotivasyon ve Verimlilik\nOdaklanma: Net bir mimari, geliştiricilerin hangi katmanda ne yapacağını bildiği için zihinsel yükü azaltır.\nUzun Vadeli Kazanç: İlk başta biraz daha fazla efor gerektirse de, Clean Architecture uzun vadede bakım maliyetini düşürür.\nEkip İçi İşbirliği: Katmanlı yapı sayesinde görev dağılımı ve sorumluluklar daha net belirlenir.\nUnutma, Clean Architecture sadece bir başlangıç noktası. Takımının ve projenin ihtiyaçlarına göre özelleştirerek sürdürülebilir, temiz ve anlaşılır kod tabanları oluşturabilirsin!\n</code></pre>"
+        },
+        "_id": "clean-architecture/index.mdx",
+        "_raw": {
+          "sourceFilePath": "clean-architecture/index.mdx",
+          "sourceFileName": "index.mdx",
+          "sourceFileDir": "clean-architecture",
+          "contentType": "mdx",
+          "flattenedPath": "clean-architecture"
+        },
+        "type": "Blog",
+        "url": "/blogs/clean-architecture"
+      },
+      "documentHash": "1741503492012",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "clean-architecture-ile-blazor/index.mdx": {
+      "document": {
+        "title": "Clean Architecture ve Blazor: Kurumsal Seviyede Modern .NET Uygulamaları",
+        "publishedAt": "2025-03-12T00:00:00.000Z",
+        "updatedAt": "2025-03-12T00:00:00.000Z",
+        "description": "Clean Architecture ilkelerini Blazor ile birleştirerek kurumsal projelerde nasıl ölçeklenebilir, bakımı kolay ve sürdürülebilir uygulamalar geliştirebileceğinizi keşfedin.",
+        "image": "/images/clean-architecture.png",
+        "isPublished": true,
+        "author": "merveeksi",
+        "tags": [
+          "C#",
+          "Clean Architecture",
+          "Blazor",
+          "Kurumsal Uygulamalar"
+        ],
+        "body": {
+          "raw": "\n# Giriş\n\nClean Architecture, **iş kurallarını** (domain) ön planda tutarken, **Blazor** ise modern web geliştirme dünyasında **.NET** tabanlı güçlü bir araç sunar. İkisini bir araya getirerek **katmanlı**, **bakımı kolay** ve **yüksek performanslı** uygulamalar geliştirebilirsin.\n\n## Mimari Yapı\n\n1. **Domain Katmanı**: Temel **Entity** ve **iş kuralları**.  \n2. **Application Katmanı**: **Servis**, **DTO**, **Use Case** (iş senaryosu) mantıkları.  \n3. **Infrastructure Katmanı**: **Veritabanı**, **API entegrasyonları** vb.  \n4. **UI (Blazor)**: Bileşen tabanlı arayüz katmanı.\n\n### Katmanlar Arası İletişim\n\n```mermaid\nflowchart LR\n    A[Domain] --> B[Application]\n    B[Application] --> C[Infrastructure]\n    B[Application] --> D[UI - Blazor]\n    C[Infrastructure] --> B\n    D[UI - Blazor] --> B\n\n    Bu şemada Domain katmanı en merkezde, UI (Blazor) en dış katmanda konumlanır. Bağımlılık içten dışa doğru akar.\n\nKod Örneği\n\n// Domain katmanında temel Entity\npublic class Customer\n{\n    public Guid Id { get; set; }\n    public string Name { get; set; } = default!;\n}\n\n// Application katmanında Use Case\npublic class CreateCustomerUseCase\n{\n    private readonly ICustomerRepository _repository;\n\n    public CreateCustomerUseCase(ICustomerRepository repository)\n    {\n        _repository = repository;\n    }\n\n    public async Task ExecuteAsync(Customer newCustomer)\n    {\n        // İş kuralları, validasyonlar\n        await _repository.AddAsync(newCustomer);\n    }\n}\nBlazor tarafında bu Use Case'i çağırarak kullanıcıdan alınan veriyi işleyebilir ve veritabanına kaydedebilirsin.\n\nSonuç\nClean Architecture ve Blazor kombinasyonu, kurumsal projelerde düşük bakım maliyeti ve yüksek esneklik sağlar. İyi tanımlanmış katmanlar sayesinde ekibin projeye hızlı adapte olur, test ve güncelleme süreçleri kolaylaşır. Böylece motivasyon artar, projeye olan güven pekişir.\n\n",
+          "html": "<h1>Giriş</h1>\n<p>Clean Architecture, <strong>iş kurallarını</strong> (domain) ön planda tutarken, <strong>Blazor</strong> ise modern web geliştirme dünyasında <strong>.NET</strong> tabanlı güçlü bir araç sunar. İkisini bir araya getirerek <strong>katmanlı</strong>, <strong>bakımı kolay</strong> ve <strong>yüksek performanslı</strong> uygulamalar geliştirebilirsin.</p>\n<h2>Mimari Yapı</h2>\n<ol>\n<li><strong>Domain Katmanı</strong>: Temel <strong>Entity</strong> ve <strong>iş kuralları</strong>.</li>\n<li><strong>Application Katmanı</strong>: <strong>Servis</strong>, <strong>DTO</strong>, <strong>Use Case</strong> (iş senaryosu) mantıkları.</li>\n<li><strong>Infrastructure Katmanı</strong>: <strong>Veritabanı</strong>, <strong>API entegrasyonları</strong> vb.</li>\n<li><strong>UI (Blazor)</strong>: Bileşen tabanlı arayüz katmanı.</li>\n</ol>\n<h3>Katmanlar Arası İletişim</h3>\n<pre><code class=\"language-mermaid\">flowchart LR\n    A[Domain] --> B[Application]\n    B[Application] --> C[Infrastructure]\n    B[Application] --> D[UI - Blazor]\n    C[Infrastructure] --> B\n    D[UI - Blazor] --> B\n\n    Bu şemada Domain katmanı en merkezde, UI (Blazor) en dış katmanda konumlanır. Bağımlılık içten dışa doğru akar.\n\nKod Örneği\n\n// Domain katmanında temel Entity\npublic class Customer\n{\n    public Guid Id { get; set; }\n    public string Name { get; set; } = default!;\n}\n\n// Application katmanında Use Case\npublic class CreateCustomerUseCase\n{\n    private readonly ICustomerRepository _repository;\n\n    public CreateCustomerUseCase(ICustomerRepository repository)\n    {\n        _repository = repository;\n    }\n\n    public async Task ExecuteAsync(Customer newCustomer)\n    {\n        // İş kuralları, validasyonlar\n        await _repository.AddAsync(newCustomer);\n    }\n}\nBlazor tarafında bu Use Case'i çağırarak kullanıcıdan alınan veriyi işleyebilir ve veritabanına kaydedebilirsin.\n\nSonuç\nClean Architecture ve Blazor kombinasyonu, kurumsal projelerde düşük bakım maliyeti ve yüksek esneklik sağlar. İyi tanımlanmış katmanlar sayesinde ekibin projeye hızlı adapte olur, test ve güncelleme süreçleri kolaylaşır. Böylece motivasyon artar, projeye olan güven pekişir.\n\n</code></pre>"
+        },
+        "_id": "clean-architecture-ile-blazor/index.mdx",
+        "_raw": {
+          "sourceFilePath": "clean-architecture-ile-blazor/index.mdx",
+          "sourceFileName": "index.mdx",
+          "sourceFileDir": "clean-architecture-ile-blazor",
+          "contentType": "mdx",
+          "flattenedPath": "clean-architecture-ile-blazor"
+        },
+        "type": "Blog",
+        "url": "/blogs/clean-architecture-ile-blazor"
+      },
+      "documentHash": "1741507398725",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "motivasyon-ve-verimlilik/index.mdx": {
+      "document": {
+        "title": "Yazılım Geliştiricileri İçin Motivasyon ve Verimlilik: İpuçları ve Stratejiler",
+        "publishedAt": "2025-03-11T00:00:00.000Z",
+        "updatedAt": "2025-03-11T00:00:00.000Z",
+        "description": "Yoğun çalışma temposunda hem zihinsel hem de fiziksel sağlığı koruyarak verimli çalışmanın yolları.",
+        "image": "/images/motivasyon.png",
+        "isPublished": true,
+        "author": "merveeksi",
+        "tags": [
+          "Motivasyon",
+          "Verimlilik",
+          "Kişisel Gelişim"
+        ],
+        "body": {
+          "raw": "\n# Giriş\n\nYazılım geliştiricileri, çoğu zaman **uzun saatler** bilgisayar başında çalışır ve **zorlayıcı** projelerle uğraşır. Bu süreçte **motivasyonu yüksek tutmak**, hem bireysel performans hem de takım başarısı için kritiktir.\n\n## Motivasyon Artırma Yöntemleri\n\n1. **Hedef Belirleme**: Hem kısa vadeli hem de uzun vadeli hedefler koyarak ilerlemeni takip et.  \n2. **Öğrenmeye Devam**: Yeni teknolojiler, diller veya araçlar keşfederek rutine kapılma.  \n3. **Ara Verme ve Dinlenme**: Pomodoro tekniği veya benzeri zaman yönetimi yöntemleriyle düzenli mola ver.\n\n### Kod Kalitesini Korumak\n\n```csharp\n// Kod kalitesini artırmak için küçük, test edilebilir metotlar yaz\npublic class MathService\n{\n    public int Add(int a, int b) => a + b;\n    \n    // Karmaşık hesaplamaları daha küçük parçalara böl\n    public int ComplexCalculation(int x)\n    {\n        // ...\n        return x * 2;\n    }\n}\n\nKüçük, test edilebilir metotlar, hem moral hem de verimlilik açısından önemlidir. Hataları hızlı bulur, bakımı kolaylaştırırsın.\n\nEkip Çalışması ve Paylaşım\nKod İncelemeleri: Takım arkadaşlarının kodunu inceleyerek karşılıklı öğrenme ortamı yarat.\nEğitim Seansları: Düzenli aralıklarla mini seminerler veya workshop'lar düzenle.\nMentorluk: Deneyimli geliştiriciler, yeni başlayanlara rehberlik ederek ekip motivasyonunu yükseltir.\nUnutma, yüksek motivasyon = daha üretken ve daha mutlu bir geliştirici hayatı!",
+          "html": "<h1>Giriş</h1>\n<p>Yazılım geliştiricileri, çoğu zaman <strong>uzun saatler</strong> bilgisayar başında çalışır ve <strong>zorlayıcı</strong> projelerle uğraşır. Bu süreçte <strong>motivasyonu yüksek tutmak</strong>, hem bireysel performans hem de takım başarısı için kritiktir.</p>\n<h2>Motivasyon Artırma Yöntemleri</h2>\n<ol>\n<li><strong>Hedef Belirleme</strong>: Hem kısa vadeli hem de uzun vadeli hedefler koyarak ilerlemeni takip et.</li>\n<li><strong>Öğrenmeye Devam</strong>: Yeni teknolojiler, diller veya araçlar keşfederek rutine kapılma.</li>\n<li><strong>Ara Verme ve Dinlenme</strong>: Pomodoro tekniği veya benzeri zaman yönetimi yöntemleriyle düzenli mola ver.</li>\n</ol>\n<h3>Kod Kalitesini Korumak</h3>\n<pre><code class=\"language-csharp\">// Kod kalitesini artırmak için küçük, test edilebilir metotlar yaz\npublic class MathService\n{\n    public int Add(int a, int b) => a + b;\n    \n    // Karmaşık hesaplamaları daha küçük parçalara böl\n    public int ComplexCalculation(int x)\n    {\n        // ...\n        return x * 2;\n    }\n}\n\nKüçük, test edilebilir metotlar, hem moral hem de verimlilik açısından önemlidir. Hataları hızlı bulur, bakımı kolaylaştırırsın.\n\nEkip Çalışması ve Paylaşım\nKod İncelemeleri: Takım arkadaşlarının kodunu inceleyerek karşılıklı öğrenme ortamı yarat.\nEğitim Seansları: Düzenli aralıklarla mini seminerler veya workshop'lar düzenle.\nMentorluk: Deneyimli geliştiriciler, yeni başlayanlara rehberlik ederek ekip motivasyonunu yükseltir.\nUnutma, yüksek motivasyon = daha üretken ve daha mutlu bir geliştirici hayatı!\n</code></pre>"
+        },
+        "_id": "motivasyon-ve-verimlilik/index.mdx",
+        "_raw": {
+          "sourceFilePath": "motivasyon-ve-verimlilik/index.mdx",
+          "sourceFileName": "index.mdx",
+          "sourceFileDir": "motivasyon-ve-verimlilik",
+          "contentType": "mdx",
+          "flattenedPath": "motivasyon-ve-verimlilik"
+        },
+        "type": "Blog",
+        "url": "/blogs/motivasyon-ve-verimlilik"
+      },
+      "documentHash": "1741508736320",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    }
+  }
+}

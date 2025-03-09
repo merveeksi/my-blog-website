@@ -1,0 +1,27 @@
+{
+  "title": "Blog One Title",
+  "publishedAt": "2025-03-09T00:00:00.000Z",
+  "updatedAt": "2025-03-09T00:00:00.000Z",
+  "description": "This is the description for blog one",
+  "image": "/images/blog-image.png",
+  "isPublished": true,
+  "author": "merveeksi",
+  "tags": [
+    "productivity",
+    "css"
+  ],
+  "body": {
+    "raw": "\n# This is the h1 element\n## This is the h2 element\n",
+    "html": "<h1>This is the h1 element</h1>\n<h2>This is the h2 element</h2>"
+  },
+  "_id": "blog-one/index.mdx",
+  "_raw": {
+    "sourceFilePath": "blog-one/index.mdx",
+    "sourceFileName": "index.mdx",
+    "sourceFileDir": "blog-one",
+    "contentType": "mdx",
+    "flattenedPath": "blog-one"
+  },
+  "type": "Blog",
+  "url": "/blogs/blog-one"
+}

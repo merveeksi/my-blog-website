@@ -1,0 +1,29 @@
+{
+  "title": "Clean Architecture ve Blazor: Kurumsal Seviyede Modern .NET Uygulamaları",
+  "publishedAt": "2025-03-12T00:00:00.000Z",
+  "updatedAt": "2025-03-12T00:00:00.000Z",
+  "description": "Clean Architecture ilkelerini Blazor ile birleştirerek kurumsal projelerde nasıl ölçeklenebilir, bakımı kolay ve sürdürülebilir uygulamalar geliştirebileceğinizi keşfedin.",
+  "image": "/images/clean-architecture.png",
+  "isPublished": true,
+  "author": "merveeksi",
+  "tags": [
+    "C#",
+    "Clean Architecture",
+    "Blazor",
+    "Kurumsal Uygulamalar"
+  ],
+  "body": {
+    "raw": "\n# Giriş\n\nClean Architecture, **iş kurallarını** (domain) ön planda tutarken, **Blazor** ise modern web geliştirme dünyasında **.NET** tabanlı güçlü bir araç sunar. İkisini bir araya getirerek **katmanlı**, **bakımı kolay** ve **yüksek performanslı** uygulamalar geliştirebilirsin.\n\n## Mimari Yapı\n\n1. **Domain Katmanı**: Temel **Entity** ve **iş kuralları**.  \n2. **Application Katmanı**: **Servis**, **DTO**, **Use Case** (iş senaryosu) mantıkları.  \n3. **Infrastructure Katmanı**: **Veritabanı**, **API entegrasyonları** vb.  \n4. **UI (Blazor)**: Bileşen tabanlı arayüz katmanı.\n\n### Katmanlar Arası İletişim\n\n```mermaid\nflowchart LR\n    A[Domain] --> B[Application]\n    B[Application] --> C[Infrastructure]\n    B[Application] --> D[UI - Blazor]\n    C[Infrastructure] --> B\n    D[UI - Blazor] --> B\n\n    Bu şemada Domain katmanı en merkezde, UI (Blazor) en dış katmanda konumlanır. Bağımlılık içten dışa doğru akar.\n\nKod Örneği\n\n// Domain katmanında temel Entity\npublic class Customer\n{\n    public Guid Id { get; set; }\n    public string Name { get; set; } = default!;\n}\n\n// Application katmanında Use Case\npublic class CreateCustomerUseCase\n{\n    private readonly ICustomerRepository _repository;\n\n    public CreateCustomerUseCase(ICustomerRepository repository)\n    {\n        _repository = repository;\n    }\n\n    public async Task ExecuteAsync(Customer newCustomer)\n    {\n        // İş kuralları, validasyonlar\n        await _repository.AddAsync(newCustomer);\n    }\n}\nBlazor tarafında bu Use Case'i çağırarak kullanıcıdan alınan veriyi işleyebilir ve veritabanına kaydedebilirsin.\n\nSonuç\nClean Architecture ve Blazor kombinasyonu, kurumsal projelerde düşük bakım maliyeti ve yüksek esneklik sağlar. İyi tanımlanmış katmanlar sayesinde ekibin projeye hızlı adapte olur, test ve güncelleme süreçleri kolaylaşır. Böylece motivasyon artar, projeye olan güven pekişir.\n\n",
+    "html": "<h1>Giriş</h1>\n<p>Clean Architecture, <strong>iş kurallarını</strong> (domain) ön planda tutarken, <strong>Blazor</strong> ise modern web geliştirme dünyasında <strong>.NET</strong> tabanlı güçlü bir araç sunar. İkisini bir araya getirerek <strong>katmanlı</strong>, <strong>bakımı kolay</strong> ve <strong>yüksek performanslı</strong> uygulamalar geliştirebilirsin.</p>\n<h2>Mimari Yapı</h2>\n<ol>\n<li><strong>Domain Katmanı</strong>: Temel <strong>Entity</strong> ve <strong>iş kuralları</strong>.</li>\n<li><strong>Application Katmanı</strong>: <strong>Servis</strong>, <strong>DTO</strong>, <strong>Use Case</strong> (iş senaryosu) mantıkları.</li>\n<li><strong>Infrastructure Katmanı</strong>: <strong>Veritabanı</strong>, <strong>API entegrasyonları</strong> vb.</li>\n<li><strong>UI (Blazor)</strong>: Bileşen tabanlı arayüz katmanı.</li>\n</ol>\n<h3>Katmanlar Arası İletişim</h3>\n<pre><code class=\"language-mermaid\">flowchart LR\n    A[Domain] --> B[Application]\n    B[Application] --> C[Infrastructure]\n    B[Application] --> D[UI - Blazor]\n    C[Infrastructure] --> B\n    D[UI - Blazor] --> B\n\n    Bu şemada Domain katmanı en merkezde, UI (Blazor) en dış katmanda konumlanır. Bağımlılık içten dışa doğru akar.\n\nKod Örneği\n\n// Domain katmanında temel Entity\npublic class Customer\n{\n    public Guid Id { get; set; }\n    public string Name { get; set; } = default!;\n}\n\n// Application katmanında Use Case\npublic class CreateCustomerUseCase\n{\n    private readonly ICustomerRepository _repository;\n\n    public CreateCustomerUseCase(ICustomerRepository repository)\n    {\n        _repository = repository;\n    }\n\n    public async Task ExecuteAsync(Customer newCustomer)\n    {\n        // İş kuralları, validasyonlar\n        await _repository.AddAsync(newCustomer);\n    }\n}\nBlazor tarafında bu Use Case'i çağırarak kullanıcıdan alınan veriyi işleyebilir ve veritabanına kaydedebilirsin.\n\nSonuç\nClean Architecture ve Blazor kombinasyonu, kurumsal projelerde düşük bakım maliyeti ve yüksek esneklik sağlar. İyi tanımlanmış katmanlar sayesinde ekibin projeye hızlı adapte olur, test ve güncelleme süreçleri kolaylaşır. Böylece motivasyon artar, projeye olan güven pekişir.\n\n</code></pre>"
+  },
+  "_id": "clean-architecture-ile-blazor/index.mdx",
+  "_raw": {
+    "sourceFilePath": "clean-architecture-ile-blazor/index.mdx",
+    "sourceFileName": "index.mdx",
+    "sourceFileDir": "clean-architecture-ile-blazor",
+    "contentType": "mdx",
+    "flattenedPath": "clean-architecture-ile-blazor"
+  },
+  "type": "Blog",
+  "url": "/blogs/clean-architecture-ile-blazor"
+}
