@@ -1,11 +1,18 @@
 import {
     HelpCircle,Component,HomeIcon,Mail,Package,ScrollText,SunMoon} from 'lucide-react';
+import Link from 'next/link';
   
-  import { Dock, DockIcon, DockItem, DockLabel } from './dock'; 
+import { Dock, DockIcon, DockItem, DockLabel } from './dock'; 
 
-  const data = [
-    {
-      title: 'Anasayfa',
+interface NavItem {
+  title: string;
+  icon: React.ReactNode;
+  href: string;
+}
+
+const navItems: NavItem[] = [
+  {
+    title: 'Anasayfa',
     icon: <HomeIcon className="h-full w-full text-neutral-600 dark:text-neutral-300" />,
     href: '/',
   },
@@ -41,24 +48,24 @@ import {
     ),
     href: '#',
   },
+];
 
-  ];
-  
-  export function NavbarDock() {
-    return (
-      <div className='absolute top-0 left-1/2 max-w-full -translate-x-1/2 mt-16'>
-        <Dock className='items-end pb-3 py-4 pl-6'>
-          {data.map((item, idx) => (
+export function NavbarDock() {
+  return (
+    <div className='absolute top-0 left-1/2 max-w-full -translate-x-1/2 mt-16'>
+      <Dock className='items-end pb-3 py-4 pl-6'>
+        {navItems.map((item, idx) => (
+          <Link href={item.href} key={idx} className="no-underline">
             <DockItem
-              key={idx}
-              className='aspect-square rounded-full bg-gray-600 dark:bg-neutral-800 mr-8'
+              className='aspect-square rounded-full bg-gray-600 dark:bg-neutral-800 mr-8 cursor-pointer'
             >
               <DockLabel>{item.title}</DockLabel>
               <DockIcon>{item.icon}</DockIcon>
             </DockItem>
-          ))}
-        </Dock>
-      </div>
-    );
-  }
+          </Link>
+        ))}
+      </Dock>
+    </div>
+  );
+}
   

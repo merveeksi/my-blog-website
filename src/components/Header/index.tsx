@@ -15,9 +15,6 @@ const Header = () => {
       <header className="w-full flex items-center justify-between h-[70px] max-w-[1440px] mx-auto px-4 md:px-6 lg:px-8">
         <Logo />
         <nav className="flex items-center gap-4">
-          <button className="bg-gray-300 rounded-full p-2">
-            {/* <SunIcon /> */}
-          </button>
           <StarWarsButton />
         </nav>
         <SocialIcons />

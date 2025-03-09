@@ -27,7 +27,7 @@ export default function BlogsArticles({ blogs = allBlogs }: BlogsArticlesProps) 
   const otherBlogs = sortedBlogs.slice(1);
 
   return (
-    <div className="w-full inline-block mt-28">
+    <div className="w-full inline-block">
       {/* COVER SECTION (İlk Blog) */}
       <article className="flex flex-col items-start justify-end mx-5 sm:mx-10 relative h-[50vh] sm:h-[70vh]">
         <div
@@ -100,7 +100,7 @@ export default function BlogsArticles({ blogs = allBlogs }: BlogsArticlesProps) 
               >
                 {blog.title}
               </Link>
-              <p className="text-gray-400 text-sm">{blog.date}</p>
+              <p className="text-gray-400 text-sm">{blog.publishedAt}</p>
 
               {/* Resim varsa */}
               {blog.image ? (
