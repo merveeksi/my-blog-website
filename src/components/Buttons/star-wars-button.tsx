@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useRef, useEffect } from 'react'
 import { motion, useAnimation } from 'framer-motion'
+import { useTheme } from 'next-themes'
 
 interface Star {
   id: number
@@ -10,10 +11,20 @@ interface Star {
   speed: number
 }
 
-const StarWarsButton: React.FC = () => {
+interface StarWarsButtonProps {
+  children: React.ReactNode;
+}
+
+const StarWarsButton: React.FC<StarWarsButtonProps> = ({ children }) => {
   const buttonRef = useRef<HTMLButtonElement>(null)
   const [stars, setStars] = useState<Star[]>([])
   const controls = useAnimation()
+  const { resolvedTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   useEffect(() => {
     const generateStars = () => {
@@ -39,7 +50,9 @@ const StarWarsButton: React.FC = () => {
   return (
     <motion.button
       ref={buttonRef}
-      className="text-md relative overflow-hidden rounded-full border-2 border-yellow-400 bg-black px-8 py-2.5 font-semibold text-yellow-400 focus:outline-none mt-20"
+      className={`text-md relative overflow-hidden rounded-full border-2 border-yellow-400 ${
+        mounted && resolvedTheme === 'light' ? 'bg-white text-black' : 'bg-black text-yellow-400'
+      } px-8 py-2.5 font-semibold focus:outline-none mt-20`}
       style={{
         boxShadow:
           '0 0 10px rgba(234, 179, 8, 0.5), 0 0 20px rgba(234, 179, 8, 0.3)',
@@ -54,7 +67,9 @@ const StarWarsButton: React.FC = () => {
       {stars.map((star) => (
         <motion.div
           key={star.id}
-          className="absolute rounded-full bg-white"
+          className={`absolute rounded-full ${
+            mounted && resolvedTheme === 'light' ? 'bg-black' : 'bg-white'
+          }`}
           style={{
             left: star.x,
             top: star.y,
@@ -73,7 +88,7 @@ const StarWarsButton: React.FC = () => {
           }}
         />
       ))}
-      <span className="relative z-10">Giriş Yap</span>
+      <span className="relative z-10">{children}</span>
     </motion.button>
   )
 }

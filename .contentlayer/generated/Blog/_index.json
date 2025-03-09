@@ -84,6 +84,34 @@
     "url": "/blogs/clean-architecture"
   },
   {
+    "title": "Yazılım Geliştiricileri İçin Motivasyon ve Verimlilik: İpuçları ve Stratejiler",
+    "publishedAt": "2025-03-11T00:00:00.000Z",
+    "updatedAt": "2025-03-11T00:00:00.000Z",
+    "description": "Yoğun çalışma temposunda hem zihinsel hem de fiziksel sağlığı koruyarak verimli çalışmanın yolları.",
+    "image": "/images/motivasyon.png",
+    "isPublished": true,
+    "author": "merveeksi",
+    "tags": [
+      "Motivasyon",
+      "Verimlilik",
+      "Kişisel Gelişim"
+    ],
+    "body": {
+      "raw": "\n# Giriş\n\nYazılım geliştiricileri, çoğu zaman **uzun saatler** bilgisayar başında çalışır ve **zorlayıcı** projelerle uğraşır. Bu süreçte **motivasyonu yüksek tutmak**, hem bireysel performans hem de takım başarısı için kritiktir.\n\n## Motivasyon Artırma Yöntemleri\n\n1. **Hedef Belirleme**: Hem kısa vadeli hem de uzun vadeli hedefler koyarak ilerlemeni takip et.  \n2. **Öğrenmeye Devam**: Yeni teknolojiler, diller veya araçlar keşfederek rutine kapılma.  \n3. **Ara Verme ve Dinlenme**: Pomodoro tekniği veya benzeri zaman yönetimi yöntemleriyle düzenli mola ver.\n\n### Kod Kalitesini Korumak\n\n```csharp\n// Kod kalitesini artırmak için küçük, test edilebilir metotlar yaz\npublic class MathService\n{\n    public int Add(int a, int b) => a + b;\n    \n    // Karmaşık hesaplamaları daha küçük parçalara böl\n    public int ComplexCalculation(int x)\n    {\n        // ...\n        return x * 2;\n    }\n}\n\nKüçük, test edilebilir metotlar, hem moral hem de verimlilik açısından önemlidir. Hataları hızlı bulur, bakımı kolaylaştırırsın.\n\nEkip Çalışması ve Paylaşım\nKod İncelemeleri: Takım arkadaşlarının kodunu inceleyerek karşılıklı öğrenme ortamı yarat.\nEğitim Seansları: Düzenli aralıklarla mini seminerler veya workshop'lar düzenle.\nMentorluk: Deneyimli geliştiriciler, yeni başlayanlara rehberlik ederek ekip motivasyonunu yükseltir.\nUnutma, yüksek motivasyon = daha üretken ve daha mutlu bir geliştirici hayatı!",
+      "html": "<h1>Giriş</h1>\n<p>Yazılım geliştiricileri, çoğu zaman <strong>uzun saatler</strong> bilgisayar başında çalışır ve <strong>zorlayıcı</strong> projelerle uğraşır. Bu süreçte <strong>motivasyonu yüksek tutmak</strong>, hem bireysel performans hem de takım başarısı için kritiktir.</p>\n<h2>Motivasyon Artırma Yöntemleri</h2>\n<ol>\n<li><strong>Hedef Belirleme</strong>: Hem kısa vadeli hem de uzun vadeli hedefler koyarak ilerlemeni takip et.</li>\n<li><strong>Öğrenmeye Devam</strong>: Yeni teknolojiler, diller veya araçlar keşfederek rutine kapılma.</li>\n<li><strong>Ara Verme ve Dinlenme</strong>: Pomodoro tekniği veya benzeri zaman yönetimi yöntemleriyle düzenli mola ver.</li>\n</ol>\n<h3>Kod Kalitesini Korumak</h3>\n<pre><code class=\"language-csharp\">// Kod kalitesini artırmak için küçük, test edilebilir metotlar yaz\npublic class MathService\n{\n    public int Add(int a, int b) => a + b;\n    \n    // Karmaşık hesaplamaları daha küçük parçalara böl\n    public int ComplexCalculation(int x)\n    {\n        // ...\n        return x * 2;\n    }\n}\n\nKüçük, test edilebilir metotlar, hem moral hem de verimlilik açısından önemlidir. Hataları hızlı bulur, bakımı kolaylaştırırsın.\n\nEkip Çalışması ve Paylaşım\nKod İncelemeleri: Takım arkadaşlarının kodunu inceleyerek karşılıklı öğrenme ortamı yarat.\nEğitim Seansları: Düzenli aralıklarla mini seminerler veya workshop'lar düzenle.\nMentorluk: Deneyimli geliştiriciler, yeni başlayanlara rehberlik ederek ekip motivasyonunu yükseltir.\nUnutma, yüksek motivasyon = daha üretken ve daha mutlu bir geliştirici hayatı!\n</code></pre>"
+    },
+    "_id": "motivasyon-ve-verimlilik/index.mdx",
+    "_raw": {
+      "sourceFilePath": "motivasyon-ve-verimlilik/index.mdx",
+      "sourceFileName": "index.mdx",
+      "sourceFileDir": "motivasyon-ve-verimlilik",
+      "contentType": "mdx",
+      "flattenedPath": "motivasyon-ve-verimlilik"
+    },
+    "type": "Blog",
+    "url": "/blogs/motivasyon-ve-verimlilik"
+  },
+  {
     "title": "Clean Architecture ve Blazor: Kurumsal Seviyede Modern .NET Uygulamaları",
     "publishedAt": "2025-03-12T00:00:00.000Z",
     "updatedAt": "2025-03-12T00:00:00.000Z",
@@ -111,33 +139,5 @@
     },
     "type": "Blog",
     "url": "/blogs/clean-architecture-ile-blazor"
-  },
-  {
-    "title": "Yazılım Geliştiricileri İçin Motivasyon ve Verimlilik: İpuçları ve Stratejiler",
-    "publishedAt": "2025-03-11T00:00:00.000Z",
-    "updatedAt": "2025-03-11T00:00:00.000Z",
-    "description": "Yoğun çalışma temposunda hem zihinsel hem de fiziksel sağlığı koruyarak verimli çalışmanın yolları.",
-    "image": "/images/motivasyon.png",
-    "isPublished": true,
-    "author": "merveeksi",
-    "tags": [
-      "Motivasyon",
-      "Verimlilik",
-      "Kişisel Gelişim"
-    ],
-    "body": {
-      "raw": "\n# Giriş\n\nYazılım geliştiricileri, çoğu zaman **uzun saatler** bilgisayar başında çalışır ve **zorlayıcı** projelerle uğraşır. Bu süreçte **motivasyonu yüksek tutmak**, hem bireysel performans hem de takım başarısı için kritiktir.\n\n## Motivasyon Artırma Yöntemleri\n\n1. **Hedef Belirleme**: Hem kısa vadeli hem de uzun vadeli hedefler koyarak ilerlemeni takip et.  \n2. **Öğrenmeye Devam**: Yeni teknolojiler, diller veya araçlar keşfederek rutine kapılma.  \n3. **Ara Verme ve Dinlenme**: Pomodoro tekniği veya benzeri zaman yönetimi yöntemleriyle düzenli mola ver.\n\n### Kod Kalitesini Korumak\n\n```csharp\n// Kod kalitesini artırmak için küçük, test edilebilir metotlar yaz\npublic class MathService\n{\n    public int Add(int a, int b) => a + b;\n    \n    // Karmaşık hesaplamaları daha küçük parçalara böl\n    public int ComplexCalculation(int x)\n    {\n        // ...\n        return x * 2;\n    }\n}\n\nKüçük, test edilebilir metotlar, hem moral hem de verimlilik açısından önemlidir. Hataları hızlı bulur, bakımı kolaylaştırırsın.\n\nEkip Çalışması ve Paylaşım\nKod İncelemeleri: Takım arkadaşlarının kodunu inceleyerek karşılıklı öğrenme ortamı yarat.\nEğitim Seansları: Düzenli aralıklarla mini seminerler veya workshop'lar düzenle.\nMentorluk: Deneyimli geliştiriciler, yeni başlayanlara rehberlik ederek ekip motivasyonunu yükseltir.\nUnutma, yüksek motivasyon = daha üretken ve daha mutlu bir geliştirici hayatı!",
-      "html": "<h1>Giriş</h1>\n<p>Yazılım geliştiricileri, çoğu zaman <strong>uzun saatler</strong> bilgisayar başında çalışır ve <strong>zorlayıcı</strong> projelerle uğraşır. Bu süreçte <strong>motivasyonu yüksek tutmak</strong>, hem bireysel performans hem de takım başarısı için kritiktir.</p>\n<h2>Motivasyon Artırma Yöntemleri</h2>\n<ol>\n<li><strong>Hedef Belirleme</strong>: Hem kısa vadeli hem de uzun vadeli hedefler koyarak ilerlemeni takip et.</li>\n<li><strong>Öğrenmeye Devam</strong>: Yeni teknolojiler, diller veya araçlar keşfederek rutine kapılma.</li>\n<li><strong>Ara Verme ve Dinlenme</strong>: Pomodoro tekniği veya benzeri zaman yönetimi yöntemleriyle düzenli mola ver.</li>\n</ol>\n<h3>Kod Kalitesini Korumak</h3>\n<pre><code class=\"language-csharp\">// Kod kalitesini artırmak için küçük, test edilebilir metotlar yaz\npublic class MathService\n{\n    public int Add(int a, int b) => a + b;\n    \n    // Karmaşık hesaplamaları daha küçük parçalara böl\n    public int ComplexCalculation(int x)\n    {\n        // ...\n        return x * 2;\n    }\n}\n\nKüçük, test edilebilir metotlar, hem moral hem de verimlilik açısından önemlidir. Hataları hızlı bulur, bakımı kolaylaştırırsın.\n\nEkip Çalışması ve Paylaşım\nKod İncelemeleri: Takım arkadaşlarının kodunu inceleyerek karşılıklı öğrenme ortamı yarat.\nEğitim Seansları: Düzenli aralıklarla mini seminerler veya workshop'lar düzenle.\nMentorluk: Deneyimli geliştiriciler, yeni başlayanlara rehberlik ederek ekip motivasyonunu yükseltir.\nUnutma, yüksek motivasyon = daha üretken ve daha mutlu bir geliştirici hayatı!\n</code></pre>"
-    },
-    "_id": "motivasyon-ve-verimlilik/index.mdx",
-    "_raw": {
-      "sourceFilePath": "motivasyon-ve-verimlilik/index.mdx",
-      "sourceFileName": "index.mdx",
-      "sourceFileDir": "motivasyon-ve-verimlilik",
-      "contentType": "mdx",
-      "flattenedPath": "motivasyon-ve-verimlilik"
-    },
-    "type": "Blog",
-    "url": "/blogs/motivasyon-ve-verimlilik"
   }
 ]

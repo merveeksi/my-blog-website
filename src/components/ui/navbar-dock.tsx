@@ -1,13 +1,17 @@
+"use client";
+
 import {
     HelpCircle,Component,HomeIcon,Mail,Package,ScrollText,SunMoon} from 'lucide-react';
 import Link from 'next/link';
   
 import { Dock, DockIcon, DockItem, DockLabel } from './dock'; 
+import { ThemeToggle } from './theme-toggle';
 
 interface NavItem {
   title: string;
   icon: React.ReactNode;
   href: string;
+  isThemeToggle?: boolean;
 }
 
 const navItems: NavItem[] = [
@@ -42,11 +46,10 @@ const navItems: NavItem[] = [
     href: '/faq',
   },
   {
-    title: 'Theme',
-    icon: (
-      <SunMoon className='h-full w-full text-neutral-600 dark:text-neutral-300' />
-    ),
+    title: 'Tema',
+    icon: <SunMoon className='h-full w-full text-neutral-600 dark:text-neutral-300' />,
     href: '#',
+    isThemeToggle: true,
   },
 ];
 
@@ -55,14 +58,26 @@ export function NavbarDock() {
     <div className='absolute top-0 left-1/2 max-w-full -translate-x-1/2 mt-16'>
       <Dock className='items-end pb-3 py-4 pl-6'>
         {navItems.map((item, idx) => (
-          <Link href={item.href} key={idx} className="no-underline">
+          item.isThemeToggle ? (
             <DockItem
+              key={idx}
               className='aspect-square rounded-full bg-gray-600 dark:bg-neutral-800 mr-8 cursor-pointer'
             >
               <DockLabel>{item.title}</DockLabel>
-              <DockIcon>{item.icon}</DockIcon>
+              <DockIcon>
+                <ThemeToggle />
+              </DockIcon>
             </DockItem>
-          </Link>
+          ) : (
+            <Link href={item.href} key={idx} className="no-underline">
+              <DockItem
+                className='aspect-square rounded-full bg-gray-600 dark:bg-neutral-800 mr-8 cursor-pointer'
+              >
+                <DockLabel>{item.title}</DockLabel>
+                <DockIcon>{item.icon}</DockIcon>
+              </DockItem>
+            </Link>
+          )
         ))}
       </Dock>
     </div>
